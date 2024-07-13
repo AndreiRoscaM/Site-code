@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Forge</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="title">The Forge</div>
+    <div class="container">
+        <div class="row">
+            <div class="button handle" id="button-1"><img src="Handle1/Handle1.png" alt="Handle 1"></div>
+            <div class="button handle" id="button-2"><img src="Handle2/Handle2.png" alt="Handle 2"></div>
+            <div class="button handle" id="button-3"><img src="Handle3/Handle3.png" alt="Handle 3"></div>
+        </div>
+        <div class="row">
+            <div class="button blade" id="button-4"><img src="Blade1/Blade1.png" alt="Blade 1"></div>
+            <div class="button blade" id="button-5"><img src="Blade2/Blade2.png" alt="Blade 2"></div>
+            <div class="button blade" id="button-6"><img src="Blade3/Blade3.png" alt="Blade 3"></div>
+        </div>
+        <div class="button button-7" id="button-7">Combine</div>
+    </div>
+    <div class="scene-container" id="scene-container"></div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
